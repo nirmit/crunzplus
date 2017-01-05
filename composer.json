@@ -1,0 +1,62 @@
+{
+    "name": "nirmit/crunzplus",
+    "description": "Crunz from Lavary - on steroids!  Schedule your tasks right from the code.",
+    "type": "library",
+    "keywords": [
+        "scheduler",
+        "cron jobs",
+        "cron",
+        "Task Scheduler",
+        "PHP Task Scheduler",
+        "Job Scheduler",
+        "Job Manager",
+        "Event Runner",
+        "crunz"
+    ],
+    "homepage": "https://github.com/nirmit/crunzplus",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Reza M. Lavaryan",
+            "email": "mrl.8081@gmail.com"
+        },
+        {
+            "name": "Nirmit Bothra",
+            "email": "nirmit.bothra@gmail.com"
+        }
+    ],
+    "support": {
+        "email": "nirmit.bothra@gmail.com",
+        "issues": "http://github.com/nirmit/crunzplus/issues"
+    },
+    "require": {
+        "php": ">=5.5",
+        "mtdowling/cron-expression": "^1.1",
+        "nesbot/carbon": "^1.21",
+        "symfony/yaml": "^3.0",
+        "symfony/finder": "^3.0",
+        "symfony/process": "^3.0",
+        "guzzlehttp/guzzle": "^6.1",
+        "symfony/console": "^3.0",
+        "symfony/config": "^3.0",
+        "jeremeamia/superclosure": "^2.2",
+        "monolog/monolog": "^1.19",
+        "swiftmailer/swiftmailer": "^5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8 || ^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Crunz\\": "src/"
+        },
+        "files": [
+            "src/Helpers.php"
+        ]
+    },
+    "bin": [
+        "crunz"
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -1,0 +1,67 @@
+# Crunz Configuration Settings
+
+
+# This option defines where the task files and directories reside.
+# The path is relative to the project's root directory, where the Crunz is installed (Trailing slashes will be ignored).
+source: tasks
+
+# The suffix is meant to target the task files inside the ":source" directory.
+# Please note if you change this value, you need to make sure all the existing tasks files are renamed accordingly.
+suffix: Tasks.php
+
+# Use MySQL Database as a task storage.  The default is false.
+# If you set this to true, please make sure to copy DBTasks.php to the ":source" directory defined above.
+# Also, change the suffix appropriately to match the ":suffix" defined above
+# use_mysql: true
+
+# If you are using Crunz to manage jobs on multiple servers, please set a unique server ID here.
+# server_id:
+
+# Error Logging
+# You may set the value to true for logging the errors
+# Set the stream to log the errors into.  Allowed values are - file, mongodb
+errors:
+#    log: true
+#    stream: mongodb
+#    endpoint: errors
+#    email: false
+
+# Output Logging
+output:
+#    log: true
+#    stream: mongodb
+#    endpoint: outputs
+#    email: false
+
+# Global Swift Mailer settings
+#
+mailer:
+    # Possible values: smtp, mail, and sendmail
+    transport: smtp
+    recipients:
+    sender_name:
+    sender_email:
+
+
+# SMTP settings
+#
+smtp:
+    host:
+    port:
+    username:
+    password:
+    encryption:
+
+# MySQL Settings for tasks
+mysql:
+#    host:
+#    port:
+#    username:
+#    password:
+#    dbname:
+
+# MongoDB Settings for logs
+mongodb:
+#    host:
+#    port:
+#    dbname:

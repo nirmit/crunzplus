@@ -1,0 +1,7 @@
+/vendor
+/tasks
+composer.phar
+composer.lock
+.DS_Store
+*.log
+crunz.yml
